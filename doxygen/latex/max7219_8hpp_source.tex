@@ -1,0 +1,54 @@
+\hypertarget{max7219_8hpp_source}{}\doxysection{max7219.\+hpp}
+\mbox{\hyperlink{max7219_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef MAX7219\_HPP}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define MAX7219\_HPP}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}hwlib.hpp"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{keyword}{namespace }MAX7219lib}
+\DoxyCodeLine{7 \{}
+\DoxyCodeLine{8     }
+\DoxyCodeLine{9 \textcolor{preprocessor}{    \#define max7219\_reg\_noop        0x00}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{    \#define max7219\_reg\_digit0      0x01}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{    \#define max7219\_reg\_digit1      0x02}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{    \#define max7219\_reg\_digit2      0x03}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{    \#define max7219\_reg\_digit3      0x04}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{    \#define max7219\_reg\_digit4      0x05}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{    \#define max7219\_reg\_digit5      0x06}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{    \#define max7219\_reg\_digit6      0x07}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{    \#define max7219\_reg\_digit7      0x08}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{    \#define max7219\_reg\_decodeMode  0x09}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{    \#define max7219\_reg\_intensity   0x0a}}
+\DoxyCodeLine{20 \textcolor{preprocessor}{    \#define max7219\_reg\_scanLimit   0x0b}}
+\DoxyCodeLine{21 \textcolor{preprocessor}{    \#define max7219\_reg\_shutdown    0x0c}}
+\DoxyCodeLine{22 \textcolor{preprocessor}{    \#define max7219\_reg\_displayTest 0x0f}}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25     \textcolor{keyword}{class }\mbox{\hyperlink{class_m_a_x7219lib_1_1max7219}{max7219}}\{}
+\DoxyCodeLine{26     \textcolor{keyword}{private}:}
+\DoxyCodeLine{27         hwlib::target::pin\_out\& clk;     }
+\DoxyCodeLine{28         hwlib::target::pin\_out\& din;     }
+\DoxyCodeLine{29         hwlib::target::pin\_out\& cs;}
+\DoxyCodeLine{30         hwlib::spi\_bus\& bus;}
+\DoxyCodeLine{31         \textcolor{keywordtype}{void} clock\_hours(uint8\_t hour);  }
+\DoxyCodeLine{32         \textcolor{keywordtype}{void} clock\_minutes(uint8\_t minute);    }
+\DoxyCodeLine{33         \textcolor{keywordtype}{void} max\_write\_test(\textcolor{keyword}{const} uint8\_t byte1, \textcolor{keyword}{const} uint8\_t byte2, \textcolor{keyword}{const} uint8\_t byte3, \textcolor{keyword}{const} uint8\_t byte4, \textcolor{keyword}{const} uint8\_t byte5, \textcolor{keyword}{const} uint8\_t byte6, \textcolor{keyword}{const} uint8\_t byte7, \textcolor{keyword}{const} uint8\_t byte8);     }
+\DoxyCodeLine{34     \textcolor{keyword}{public}:}
+\DoxyCodeLine{37         \mbox{\hyperlink{class_m_a_x7219lib_1_1max7219_ad0e800790753218f81400d4bc1ae5eed}{max7219}}(hwlib::target::pin\_out\& clk, hwlib::target::pin\_out\& din, hwlib::target::pin\_out\& cs, hwlib::spi\_bus\& bus ):}
+\DoxyCodeLine{38         clk(clk), din(din), cs(cs), bus(bus)}
+\DoxyCodeLine{39         \{\} }
+\DoxyCodeLine{42         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_m_a_x7219lib_1_1max7219_ae4953be9f961683b6f4b4a9db45a82f4}{init}}(uint8\_t brightness);}
+\DoxyCodeLine{45         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_m_a_x7219lib_1_1max7219_a9c1a7974a0450c5c0f04276fae7d18e6}{clear}}();}
+\DoxyCodeLine{48         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_m_a_x7219lib_1_1max7219_aef1da400e5f1af774308ba7c2a32a3ff}{all\_led\_on}}();}
+\DoxyCodeLine{51         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_m_a_x7219lib_1_1max7219_ab4eac138d3e8a42a077b78b33b404b3d}{all\_led\_off}}();}
+\DoxyCodeLine{54         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_m_a_x7219lib_1_1max7219_aa490ed180de309a114ed66e13c7fca64}{set\_letter}}(uint8\_t digit, uint8\_t letter[]);}
+\DoxyCodeLine{57         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_m_a_x7219lib_1_1max7219_a0242f59e109120273b23659a0b237472}{set\_number}}(uint8\_t digit, uint8\_t number);}
+\DoxyCodeLine{60         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_m_a_x7219lib_1_1max7219_a533a390c56cea4f60fa40b09f5d10860}{set\_clock}}(uint8\_t hour, uint8\_t minute);}
+\DoxyCodeLine{61         }
+\DoxyCodeLine{62     \};}
+\DoxyCodeLine{63 \}}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{65 }
+\DoxyCodeLine{66 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

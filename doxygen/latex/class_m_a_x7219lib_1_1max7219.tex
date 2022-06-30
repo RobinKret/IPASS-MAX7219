@@ -1,0 +1,113 @@
+\hypertarget{class_m_a_x7219lib_1_1max7219}{}\doxysection{MAX7219lib\+::max7219 Class Reference}
+\label{class_m_a_x7219lib_1_1max7219}\index{MAX7219lib::max7219@{MAX7219lib::max7219}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_m_a_x7219lib_1_1max7219_ad0e800790753218f81400d4bc1ae5eed}{max7219}} (hwlib\+::target\+::pin\+\_\+out \&clk, hwlib\+::target\+::pin\+\_\+out \&din, hwlib\+::target\+::pin\+\_\+out \&cs, hwlib\+::spi\+\_\+bus \&bus)
+\begin{DoxyCompactList}\small\item\em Constructor for MAX7219. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_m_a_x7219lib_1_1max7219_ae4953be9f961683b6f4b4a9db45a82f4}{init}} (uint8\+\_\+t brightness)
+\begin{DoxyCompactList}\small\item\em Initialisation of the MAX7219. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_m_a_x7219lib_1_1max7219_a9c1a7974a0450c5c0f04276fae7d18e6}{clear}} ()
+\begin{DoxyCompactList}\small\item\em Clears the MAX7219. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_m_a_x7219lib_1_1max7219_aef1da400e5f1af774308ba7c2a32a3ff}{all\+\_\+led\+\_\+on}} ()
+\begin{DoxyCompactList}\small\item\em Turn all led\textquotesingle{}s on. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_m_a_x7219lib_1_1max7219_ab4eac138d3e8a42a077b78b33b404b3d}{all\+\_\+led\+\_\+off}} ()
+\begin{DoxyCompactList}\small\item\em Turn all led\textquotesingle{}s off. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_m_a_x7219lib_1_1max7219_aa490ed180de309a114ed66e13c7fca64}{set\+\_\+letter}} (uint8\+\_\+t digit, uint8\+\_\+t letter\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Sets a letter on the MAX7219. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_m_a_x7219lib_1_1max7219_a0242f59e109120273b23659a0b237472}{set\+\_\+number}} (uint8\+\_\+t digit, uint8\+\_\+t number)
+\begin{DoxyCompactList}\small\item\em Sets a number on the MAX7219. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_m_a_x7219lib_1_1max7219_a533a390c56cea4f60fa40b09f5d10860}{set\+\_\+clock}} (uint8\+\_\+t hour, uint8\+\_\+t minute)
+\begin{DoxyCompactList}\small\item\em Makes a clock. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_m_a_x7219lib_1_1max7219_ad0e800790753218f81400d4bc1ae5eed}\label{class_m_a_x7219lib_1_1max7219_ad0e800790753218f81400d4bc1ae5eed}} 
+\index{MAX7219lib::max7219@{MAX7219lib::max7219}!max7219@{max7219}}
+\index{max7219@{max7219}!MAX7219lib::max7219@{MAX7219lib::max7219}}
+\doxysubsubsection{\texorpdfstring{max7219()}{max7219()}}
+{\footnotesize\ttfamily MAX7219lib\+::max7219\+::max7219 (\begin{DoxyParamCaption}\item[{hwlib\+::target\+::pin\+\_\+out \&}]{clk,  }\item[{hwlib\+::target\+::pin\+\_\+out \&}]{din,  }\item[{hwlib\+::target\+::pin\+\_\+out \&}]{cs,  }\item[{hwlib\+::spi\+\_\+bus \&}]{bus }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor for MAX7219. 
+
+With this constructor you can set the clock(clk) pin, data in(din) pin, chip select(cs) pin. and create a spi bus. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_m_a_x7219lib_1_1max7219_ab4eac138d3e8a42a077b78b33b404b3d}\label{class_m_a_x7219lib_1_1max7219_ab4eac138d3e8a42a077b78b33b404b3d}} 
+\index{MAX7219lib::max7219@{MAX7219lib::max7219}!all\_led\_off@{all\_led\_off}}
+\index{all\_led\_off@{all\_led\_off}!MAX7219lib::max7219@{MAX7219lib::max7219}}
+\doxysubsubsection{\texorpdfstring{all\_led\_off()}{all\_led\_off()}}
+{\footnotesize\ttfamily void MAX7219lib\+::max7219\+::all\+\_\+led\+\_\+off (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Turn all led\textquotesingle{}s off. 
+
+When this funcion is called all led\textquotesingle{}s of the MAX7219 will turn off. \mbox{\Hypertarget{class_m_a_x7219lib_1_1max7219_aef1da400e5f1af774308ba7c2a32a3ff}\label{class_m_a_x7219lib_1_1max7219_aef1da400e5f1af774308ba7c2a32a3ff}} 
+\index{MAX7219lib::max7219@{MAX7219lib::max7219}!all\_led\_on@{all\_led\_on}}
+\index{all\_led\_on@{all\_led\_on}!MAX7219lib::max7219@{MAX7219lib::max7219}}
+\doxysubsubsection{\texorpdfstring{all\_led\_on()}{all\_led\_on()}}
+{\footnotesize\ttfamily void MAX7219lib\+::max7219\+::all\+\_\+led\+\_\+on (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Turn all led\textquotesingle{}s on. 
+
+When this funcion is called all led\textquotesingle{}s of the MAX7219 will turn on. \mbox{\Hypertarget{class_m_a_x7219lib_1_1max7219_a9c1a7974a0450c5c0f04276fae7d18e6}\label{class_m_a_x7219lib_1_1max7219_a9c1a7974a0450c5c0f04276fae7d18e6}} 
+\index{MAX7219lib::max7219@{MAX7219lib::max7219}!clear@{clear}}
+\index{clear@{clear}!MAX7219lib::max7219@{MAX7219lib::max7219}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void MAX7219lib\+::max7219\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clears the MAX7219. 
+
+Clears all the led\textquotesingle{}s of the MAX7219. \mbox{\Hypertarget{class_m_a_x7219lib_1_1max7219_ae4953be9f961683b6f4b4a9db45a82f4}\label{class_m_a_x7219lib_1_1max7219_ae4953be9f961683b6f4b4a9db45a82f4}} 
+\index{MAX7219lib::max7219@{MAX7219lib::max7219}!init@{init}}
+\index{init@{init}!MAX7219lib::max7219@{MAX7219lib::max7219}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void MAX7219lib\+::max7219\+::init (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{brightness }\end{DoxyParamCaption})}
+
+
+
+Initialisation of the MAX7219. 
+
+Intitialises the MAX7219 with a given brightness value from 1-\/15. \mbox{\Hypertarget{class_m_a_x7219lib_1_1max7219_a533a390c56cea4f60fa40b09f5d10860}\label{class_m_a_x7219lib_1_1max7219_a533a390c56cea4f60fa40b09f5d10860}} 
+\index{MAX7219lib::max7219@{MAX7219lib::max7219}!set\_clock@{set\_clock}}
+\index{set\_clock@{set\_clock}!MAX7219lib::max7219@{MAX7219lib::max7219}}
+\doxysubsubsection{\texorpdfstring{set\_clock()}{set\_clock()}}
+{\footnotesize\ttfamily void MAX7219lib\+::max7219\+::set\+\_\+clock (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{hour,  }\item[{uint8\+\_\+t}]{minute }\end{DoxyParamCaption})}
+
+
+
+Makes a clock. 
+
+Set the time for a clock on the MAX7219. Hour is a number from 0-\/23 and minute is a number from 0-\/59. \mbox{\Hypertarget{class_m_a_x7219lib_1_1max7219_aa490ed180de309a114ed66e13c7fca64}\label{class_m_a_x7219lib_1_1max7219_aa490ed180de309a114ed66e13c7fca64}} 
+\index{MAX7219lib::max7219@{MAX7219lib::max7219}!set\_letter@{set\_letter}}
+\index{set\_letter@{set\_letter}!MAX7219lib::max7219@{MAX7219lib::max7219}}
+\doxysubsubsection{\texorpdfstring{set\_letter()}{set\_letter()}}
+{\footnotesize\ttfamily void MAX7219lib\+::max7219\+::set\+\_\+letter (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{digit,  }\item[{uint8\+\_\+t}]{letter\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Sets a letter on the MAX7219. 
+
+Sets the given letter on the given spot on the MAX7219. Digit is the matrix you want to display the letter on from 1-\/4, letter is a capital letter from the alphabet. \mbox{\Hypertarget{class_m_a_x7219lib_1_1max7219_a0242f59e109120273b23659a0b237472}\label{class_m_a_x7219lib_1_1max7219_a0242f59e109120273b23659a0b237472}} 
+\index{MAX7219lib::max7219@{MAX7219lib::max7219}!set\_number@{set\_number}}
+\index{set\_number@{set\_number}!MAX7219lib::max7219@{MAX7219lib::max7219}}
+\doxysubsubsection{\texorpdfstring{set\_number()}{set\_number()}}
+{\footnotesize\ttfamily void MAX7219lib\+::max7219\+::set\+\_\+number (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{digit,  }\item[{uint8\+\_\+t}]{number }\end{DoxyParamCaption})}
+
+
+
+Sets a number on the MAX7219. 
+
+Sets the given number on the given spot on the MAX7219. Digit is the matrix you want to display the number on from 1-\/4, number is a number from 0-\/9. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{max7219_8hpp}{max7219.\+hpp}}\item 
+max7219.\+cpp\end{DoxyCompactItemize}
